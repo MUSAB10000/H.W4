@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musab Alabdullatif - Projects</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="long-shadow">My Projects</h1>
+    <nav role="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h2>Movie Recommendation System</h2>
+      <p>Developed a content-based movie recommendation system using Python to enhance user experience and recommendation accuracy.</p>
+      <time datetime="2024-05">May 2024</time>
+      <figure>
+        <img src="image2.png" alt="Movie Recommendation System Screenshot">
+        <figcaption>The output of the movie recommendation system.</figcaption>
+      </figure>
+      <a href="https://github.com/MUSAB10000/Movie-Recommendation-System-Data-Analysis-and-Preprocessing">View on GitHub</a>
+    </article>
+
+    <article>
+      <h2>Murabi - Livestock Management System</h2>
+      <p>Designed a digital platform to manage livestock records, enhancing data accuracy and streamlining operations.</p>
+      <time datetime="2024-12">December 2024</time>
+      <figure>
+        <img src="murabi.png" alt="Murabi System Screenshot">
+        <figcaption>Livestock login.</figcaption>
+      </figure>
+      <a href="coming">Coming soon</a>
+    </article>
+    
+    <button id="showMoreProjects">Show More Projects</button>
+  </main>
+  <footer>
+    <p>&copy; 2025 Musab Alabdullatif. All Rights Reserved.</p>
+    <a href="#top">Back to Top</a>
+  </footer>
+
+  <script>
+    document.getElementById("showMoreProjects").addEventListener("click", function() {
+      let newProject = document.createElement("article");
+      newProject.innerHTML = `
+        <h2>sentiment Analysis in Arabic tweets</h2>
+        <p>The goal of this project is to build a machine learning model that accurately classifies Arabic tweets as positive or negative. The project involves data cleaning, preprocessing of Arabic text, feature extraction, model training, evaluation, and deployment of a web app for real-time sentiment prediction.</p>
+        <time datetime="2025-04">April 2025</time>
+        <figure>
+          <img src="test.jpg" alt="Screenshot of output">
+        </figure>
+        <a href="https://github.com/MUSAB10000/sentiment-Analysis-in-Arabic-tweets">View on GitHub</a>
+      `;
+      
+      document.querySelector("main").appendChild(newProject);
+    });
+  </script>
+</body>
+</html>

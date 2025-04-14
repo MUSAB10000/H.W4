@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musab Alabdullatif - CV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="long-shadow">My CV</h1>
+    <nav role="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Profile</h2>
+      <article>
+        <p>Interested in data and AI, focusing on turning data into useful insights. Skilled in Python, SQL, and visualization tools.</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <article>
+        <p><strong>Bachelor of Science in Computer Science</strong> - King Saud University (2021 – present)</p>
+      </article>
+    </section>
+
+    <!-- Skills section with an id for toggling -->
+    <section id="skillsSection">
+      <h2>Skills</h2>
+      <article>
+        <ul>
+          <li>Programming Languages: Python, SQL, Java</li>
+          <li>Data Analysis & Visualization: pandas, NumPy, matplotlib, seaborn, Power BI</li>
+          <li>Databases: MySQL, PostgreSQL</li>
+          <li>Machine Learning: scikit-learn</li>
+        </ul>
+      </article>
+    </section>
+    <button id="toggleSkills">Toggle Skills</button>
+
+    <blockquote>
+      <strong>"All great achievements require time." </strong> - Maya Angelou
+    </blockquote>
+  </main>
+  <footer>
+    <p>&copy; 2025 Musab Alabdullatif. All Rights Reserved.</p>
+    <a href="#top">Back to Top</a>
+  </footer>
+
+  <script>
+    document.getElementById("toggleSkills").addEventListener("click", function() {
+      let skillsSection = document.getElementById("skillsSection");
+      if (skillsSection.style.display === "none" || skillsSection.style.display === "") {
+        skillsSection.style.display = "block";
+      } else {
+        skillsSection.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
