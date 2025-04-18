@@ -43,23 +43,6 @@
     <a href="#top">Back to Top</a>
   </footer>
 
-  <script>
-    function updateGreeting() {
-      const now = new Date();
-      const hours = now.getHours();
-      let greetingText;
-
-      if (hours < 12) {
-        greetingText = "Good morning!";
-      } else if (hours < 18) {
-        greetingText = "Good afternoon!";
-      } else {
-        greetingText = "Good evening!";
-      }
-      
-      document.getElementById("greeting").innerText = greetingText;
-    }
-    updateGreeting();
-  </script>
+  <script src="scripts/index.js"></script>
 </body>
 </html>

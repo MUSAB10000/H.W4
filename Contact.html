@@ -43,47 +43,6 @@
     <a href="#top">Back to Top</a>
   </footer>
 
-  <script>
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-      let valid = true;
-
-      // Clear previous error messages
-      document.getElementById("nameError").innerText = "";
-      document.getElementById("emailError").innerText = "";
-      document.getElementById("messageError").innerText = "";
-
-      // Get trimmed values for robust validation
-      let name = document.getElementById("name").value.trim();
-      let email = document.getElementById("email").value.trim();
-      let message = document.getElementById("message").value.trim();
-
-      // Validate name
-      if (name === "") {
-        document.getElementById("nameError").innerText = "Name is required.";
-        valid = false;
-      }
-
-      let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (email === "") {
-        document.getElementById("emailError").innerText = "Email is required.";
-        valid = false;
-      } else if (!emailPattern.test(email)) {
-        document.getElementById("emailError").innerText = "Invalid email format.";
-        valid = false;
-      }
-
-      if (message === "") {
-        document.getElementById("messageError").innerText = "Message is required.";
-        valid = false;
-      } else if (message.length < 10) {
-        document.getElementById("messageError").innerText = "Message must be at least 10 characters.";
-        valid = false;
-      }
-
-      if (!valid) {
-        e.preventDefault();
-      }
-    });
-  </script>
+  <script src="scripts/contact.js"></script>
 </body>
 </html>
